@@ -1,0 +1,283 @@
+{
+  "atendimento": {
+    "id": "atendimento",
+    "nome": "Atendimento",
+    "descricao": "Atendimento ao cliente com multi-agentes de IA, cuidando de recepção, dúvidas, alterações de dados e recuperação de documentos.",
+    "responsavel_setor": "A definir",
+    "percentual_automacao_setor": 0.95,
+    "processos": [
+      {
+        "id": "atendimento-multiagente",
+        "nome": "Atendimento Multi-Agente",
+        "descricao": "Fluxo completo de atendimento ao cliente com recepção, resolução de dúvidas, alteração de dados quando permitido e recuperação de documentos.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 1850,
+        "agentes": [
+          {
+            "id": "recepcao-bot",
+            "nome": "ReceptorBot",
+            "descricao": "Agente de recepção inicial que identifica a necessidade do cliente e roteia para o agente especializado correto.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 4580,
+            "taxa_sucesso": 0.985,
+            "latencia_p50_ms": 680,
+            "latencia_p95_ms": 1150,
+            "transbordo": 0.05
+          },
+          {
+            "id": "duvidas-resolver",
+            "nome": "DúvidasResolver",
+            "descricao": "Especialista em resolver dúvidas frequentes sobre planos, coberturas, rede credenciada e procedimentos.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 3890,
+            "taxa_sucesso": 0.978,
+            "latencia_p50_ms": 920,
+            "latencia_p95_ms": 1580,
+            "transbordo": 0.05
+          },
+          {
+            "id": "dados-manager",
+            "nome": "DadosManager",
+            "descricao": "Gerencia alterações permitidas nos dados cadastrais do beneficiário (endereço, telefone, email).",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2340,
+            "taxa_sucesso": 0.992,
+            "latencia_p50_ms": 780,
+            "latencia_p95_ms": 1320
+          },
+          {
+            "id": "doc-retriever",
+            "nome": "DocRetriever",
+            "descricao": "Recupera e envia documentos solicitados pelo beneficiário (carteirinha, comprovantes, histórico).",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 1680,
+            "taxa_sucesso": 0.988,
+            "latencia_p50_ms": 1050,
+            "latencia_p95_ms": 1780
+          }
+        ]
+      }
+    ]
+  },
+  "analise_documental": {
+    "id": "analise-documental",
+    "nome": "Análise Documental",
+    "descricao": "Validação automatizada de documentos de novos beneficiários com OCR e comparação inteligente, reduzindo fraudes e tempo de aprovação.",
+    "responsavel_setor": "A definir",
+    "percentual_automacao_setor": 0.98,
+    "processos": [
+      {
+        "id": "validacao-beneficiarios",
+        "nome": "Validação de Beneficiários",
+        "descricao": "Análise automática de documentos de novos beneficiários com OCR treinado, comparação entre documentos e validação de autenticidade em segundos.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 3200,
+        "agentes": [
+          {
+            "id": "ocr-engine",
+            "nome": "OCREngine",
+            "descricao": "Engine de OCR treinado com documentos da Blue para extração precisa de dados de RG, CPF, comprovantes e outros documentos.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2890,
+            "taxa_sucesso": 0.982,
+            "latencia_p50_ms": 1450,
+            "latencia_p95_ms": 2400
+          },
+          {
+            "id": "doc-comparator",
+            "nome": "DocComparator",
+            "descricao": "Compara dados extraídos entre múltiplos documentos para validar consistência e detectar inconsistências ou fraudes.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2890,
+            "taxa_sucesso": 0.989,
+            "latencia_p50_ms": 1120,
+            "latencia_p95_ms": 1850
+          },
+          {
+            "id": "fraud-detector",
+            "nome": "FraudDetector",
+            "descricao": "Detecta tentativas de fraude analisando padrões suspeitos, validando endereços e cruzando informações com bases externas.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2890,
+            "taxa_sucesso": 0.994,
+            "latencia_p50_ms": 980,
+            "latencia_p95_ms": 1620
+          },
+          {
+            "id": "corretor-notifier",
+            "nome": "CorretorNotifier",
+            "descricao": "Notifica corretor instantaneamente sobre aprovação ou pendências, permitindo resolução rápida de problemas.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2890,
+            "taxa_sucesso": 0.996,
+            "latencia_p50_ms": 520,
+            "latencia_p95_ms": 890
+          }
+        ]
+      }
+    ]
+  },
+  "credenciamento_real": {
+    "id": "credenciamento",
+    "nome": "Credenciamento",
+    "descricao": "Automação completa do credenciamento de hospitais e prestadores, desde validação de documentos até geração de contratos (minutas).",
+    "responsavel_setor": "Ruy Hernandes",
+    "percentual_automacao_setor": 0.92,
+    "processos": [
+      {
+        "id": "validacao-documentos-prestador",
+        "nome": "Validação de Documentos de Prestadores",
+        "descricao": "Validação automatizada de toda documentação necessária para credenciamento de hospitais e prestadores.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 2650,
+        "agentes": [
+          {
+            "id": "doc-validator-prestador",
+            "nome": "DocValidatorPrestador",
+            "descricao": "Valida documentos obrigatórios (CNPJ, alvará, certificados) e verifica completude da documentação.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 890,
+            "taxa_sucesso": 0.987,
+            "latencia_p50_ms": 1280,
+            "latencia_p95_ms": 2100
+          },
+          {
+            "id": "data-extractor",
+            "nome": "DataExtractor",
+            "descricao": "Extrai dados dos documentos e preenche automaticamente formulários de credenciamento, eliminando trabalho manual.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 890,
+            "taxa_sucesso": 0.983,
+            "latencia_p50_ms": 1450,
+            "latencia_p95_ms": 2350
+          }
+        ]
+      },
+      {
+        "id": "geracao-minuta-contrato",
+        "nome": "Geração de Minuta de Contrato",
+        "descricao": "Geração automatizada de minutas de contratos personalizadas com base nos dados validados do prestador.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 1980,
+        "agentes": [
+          {
+            "id": "minuta-generator",
+            "nome": "MinutaGenerator",
+            "descricao": "Gera minutas de contratos com cláusulas adequadas baseadas no tipo de prestador, serviços oferecidos e região.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 780,
+            "taxa_sucesso": 0.994,
+            "latencia_p50_ms": 1050,
+            "latencia_p95_ms": 1820
+          },
+          {
+            "id": "integration-engine",
+            "nome": "IntegrationEngine",
+            "descricao": "Integra dados validados na base da Blue e prepara para assinatura digital do contrato.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 780,
+            "taxa_sucesso": 0.991,
+            "latencia_p50_ms": 920,
+            "latencia_p95_ms": 1580
+          }
+        ]
+      },
+      {
+        "id": "compliance-prestador",
+        "nome": "Compliance de Prestadores",
+        "descricao": "Verifica conformidade regulatória e cruza informações com bases da ANS e outros órgãos.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 2280,
+        "agentes": [
+          {
+            "id": "compliance-checker-prestador",
+            "nome": "ComplianceCheckerPrestador",
+            "descricao": "Verifica situação do prestador junto à ANS, vigilância sanitária e outros órgãos reguladores.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 890,
+            "taxa_sucesso": 0.989,
+            "latencia_p50_ms": 1180,
+            "latencia_p95_ms": 1980
+          }
+        ]
+      }
+    ]
+  },
+  "vendas_pj_plus_real": {
+    "id": "vendas-pj-plus",
+    "nome": "Vendas PJ+",
+    "descricao": "Sistema inteligente de análise de editais de licitação, classificação por relevância e explicação detalhada por multi-agentes.",
+    "responsavel_setor": "Paulo Sérgio",
+    "percentual_automacao_setor": 0.88,
+    "processos": [
+      {
+        "id": "busca-editais",
+        "nome": "Busca e Classificação de Editais",
+        "descricao": "Busca automatizada de editais de licitação em múltiplas fontes, com classificação inteligente por relevância baseada nas especificações do usuário.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 2850,
+        "agentes": [
+          {
+            "id": "edital-crawler",
+            "nome": "EditalCrawler",
+            "descricao": "Varre sites de licitação (Comprasnet, portais estaduais/municipais) em busca de novos editais continuamente.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 3400,
+            "taxa_sucesso": 0.976,
+            "latencia_p50_ms": 1380,
+            "latencia_p95_ms": 2400
+          },
+          {
+            "id": "edital-classifier",
+            "nome": "EditalClassifier",
+            "descricao": "Classifica editais por mais ou menos interessantes baseado em produto, região, porte da empresa cliente e histórico.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 2890,
+            "taxa_sucesso": 0.982,
+            "latencia_p50_ms": 1150,
+            "latencia_p95_ms": 1950
+          }
+        ]
+      },
+      {
+        "id": "analise-editais",
+        "nome": "Análise e Explicação de Editais",
+        "descricao": "Multi-agentes analisam editais em profundidade, resumem, explicam pontos críticos e avaliam viabilidade para o cliente.",
+        "status": "Automatizado",
+        "tempo_medio_execucao_ms": 3650,
+        "agentes": [
+          {
+            "id": "edital-summarizer",
+            "nome": "EditalSummarizer",
+            "descricao": "Resume editais extensos extraindo pontos-chave: objeto, prazos, exigências técnicas, valores estimados.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 1680,
+            "taxa_sucesso": 0.979,
+            "latencia_p50_ms": 1580,
+            "latencia_p95_ms": 2480
+          },
+          {
+            "id": "viability-analyzer",
+            "nome": "ViabilityAnalyzer",
+            "descricao": "Analisa viabilidade do edital para o cliente: adequação do produto, competitividade, custos operacionais na região.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 1680,
+            "taxa_sucesso": 0.985,
+            "latencia_p50_ms": 1420,
+            "latencia_p95_ms": 2280
+          },
+          {
+            "id": "recommendation-engine",
+            "nome": "RecommendationEngine",
+            "descricao": "Recomenda participação ou não no edital, com justificativa detalhada baseada em análise multi-critério.",
+            "responsavel_tecnico": "Equipe NUV Tech",
+            "execucoes_24h": 1680,
+            "taxa_sucesso": 0.988,
+            "latencia_p50_ms": 1280,
+            "latencia_p95_ms": 2080
+          }
+        ]
+      }
+    ]
+  }
+}

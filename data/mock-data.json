@@ -1,0 +1,1007 @@
+{
+  "empresa": {
+    "id": "blue",
+    "nome": "Blue Saúde",
+    "descricao": "Operadora de saúde com agentes de IA em múltiplos setores, automatizando processos críticos e aumentando eficiência operacional.",
+    "percentual_automacao_global": 0.772,
+    "setores": [
+      {
+        "id": "atendimento",
+        "nome": "Atendimento",
+        "descricao": "Atendimento ao cliente com Bloom, agente conversacional de IA que resolve dúvidas, altera dados cadastrais e recupera documentos de forma natural e eficiente.",
+        "responsavel_setor": "Franciele Ribeiro",
+        "percentual_automacao_setor": 0.95,
+        "processos": [
+          {
+            "id": "atendimento-multiagente",
+            "nome": "Atendimento com Bloom",
+            "descricao": "Bloom é a agente conversacional de IA que realiza atendimento completo ao cliente, conversando de forma natural, resolvendo dúvidas, alterando dados quando permitido e recuperando documentos.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1850,
+            "agentes": [
+              {
+                "id": "bloom",
+                "nome": "Bloom",
+                "descricao": "Agente conversacional de IA que realiza atendimento completo: recepção, resolução de dúvidas sobre planos e coberturas, alteração de dados cadastrais quando permitido, recuperação de documentos e muito mais.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 12490,
+                "taxa_sucesso": 0.985,
+                "latencia_p50_ms": 850,
+                "latencia_p95_ms": 1580,
+                "transbordo": 0.05
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vendas-adesao",
+        "nome": "Vendas Adesão",
+        "descricao": "Gestão de vendas para planos de adesão individual e familiar.",
+        "responsavel_setor": "Tarso Rozemberg",
+        "percentual_automacao_setor": 0.93,
+        "processos": [
+          {
+            "id": "qualificacao-leads",
+            "nome": "Qualificação de Leads",
+            "descricao": "Analisa e qualifica leads automaticamente com base em perfil e histórico.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1200,
+            "agentes": [
+              {
+                "id": "leadscorer",
+                "nome": "LeadScorer",
+                "descricao": "Pontua e qualifica leads usando ML para priorização.",
+                "responsavel_tecnico": "Bruno Costa",
+                "execucoes_24h": 2340,
+                "taxa_sucesso": 0.978,
+                "latencia_p50_ms": 650,
+                "latencia_p95_ms": 1100
+              },
+              {
+                "id": "enricher",
+                "nome": "DataEnricher",
+                "descricao": "Enriquece dados do lead com fontes externas.",
+                "responsavel_tecnico": "Bruno Costa",
+                "execucoes_24h": 2180,
+                "taxa_sucesso": 0.965,
+                "latencia_p50_ms": 890,
+                "latencia_p95_ms": 1450
+              }
+            ]
+          },
+          {
+            "id": "proposta-digital",
+            "nome": "Geração de Proposta Digital",
+            "descricao": "Cria propostas personalizadas automaticamente com base no perfil.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1850,
+            "agentes": [
+              {
+                "id": "proposalgen",
+                "nome": "ProposalGen",
+                "descricao": "Gera propostas personalizadas com pricing dinâmico.",
+                "responsavel_tecnico": "Fernanda Lima",
+                "execucoes_24h": 1890,
+                "taxa_sucesso": 0.992,
+                "latencia_p50_ms": 980,
+                "latencia_p95_ms": 1620
+              }
+            ]
+          },
+          {
+            "id": "followup-automatico",
+            "nome": "Follow-up Automatizado",
+            "descricao": "Realiza follow-ups personalizados via email e WhatsApp.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 950,
+            "agentes": [
+              {
+                "id": "followbot",
+                "nome": "FollowBot",
+                "descricao": "Gerencia sequências de follow-up multicanal.",
+                "responsavel_tecnico": "Ricardo Souza",
+                "execucoes_24h": 4120,
+                "taxa_sucesso": 0.981,
+                "latencia_p50_ms": 520,
+                "latencia_p95_ms": 920
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "marketing",
+        "nome": "Marketing",
+        "descricao": "Campanhas, análise de mercado e geração de conteúdo estratégico.",
+        "responsavel_setor": "Tarso Rozemberg",
+        "percentual_automacao_setor": 0.91,
+        "processos": [
+          {
+            "id": "analise-sentimento",
+            "nome": "Análise de Sentimento",
+            "descricao": "Monitora redes sociais e analisa sentimento de menções à marca.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1450,
+            "agentes": [
+              {
+                "id": "sentimentai",
+                "nome": "SentimentAI",
+                "descricao": "Analisa sentimento em tempo real de menções e comentários.",
+                "responsavel_tecnico": "Paula Martins",
+                "execucoes_24h": 3200,
+                "taxa_sucesso": 0.973,
+                "latencia_p50_ms": 780,
+                "latencia_p95_ms": 1380
+              }
+            ]
+          },
+          {
+            "id": "geracao-conteudo",
+            "nome": "Geração de Conteúdo",
+            "descricao": "Cria posts, newsletters e conteúdo educativo automaticamente.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2200,
+            "agentes": [
+              {
+                "id": "contentwriter",
+                "nome": "ContentWriter",
+                "descricao": "Gera conteúdo otimizado para SEO e engajamento.",
+                "responsavel_tecnico": "Lucas Ferreira",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.968,
+                "latencia_p50_ms": 1150,
+                "latencia_p95_ms": 1980
+              }
+            ]
+          },
+          {
+            "id": "segmentacao-campanhas",
+            "nome": "Segmentação de Campanhas",
+            "descricao": "Segmenta audiências e otimiza targeting de campanhas.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1680,
+            "agentes": [
+              {
+                "id": "audisegment",
+                "nome": "AudiSegment",
+                "descricao": "Segmenta audiências com ML para campanhas direcionadas.",
+                "responsavel_tecnico": "Mariana Rocha",
+                "execucoes_24h": 1240,
+                "taxa_sucesso": 0.955,
+                "latencia_p50_ms": 920,
+                "latencia_p95_ms": 1560
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "credenciamento",
+        "nome": "Credenciamento",
+        "descricao": "Automação completa do credenciamento de hospitais e prestadores, desde validação de documentos até geração de contratos (minutas), reduzindo equipe em 50%.",
+        "responsavel_setor": "Ruy Hernandes",
+        "percentual_automacao_setor": 0.92,
+        "processos": [
+          {
+            "id": "validacao-documentos-prestador",
+            "nome": "Validação de Documentos de Prestadores",
+            "descricao": "Validação automatizada de toda documentação necessária para credenciamento de hospitais e prestadores, eliminando trabalho manual.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2650,
+            "agentes": [
+              {
+                "id": "doc-validator-prestador",
+                "nome": "DocValidatorPrestador",
+                "descricao": "Valida documentos obrigatórios (CNPJ, alvará, certificados) e verifica completude da documentação.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.987,
+                "latencia_p50_ms": 1280,
+                "latencia_p95_ms": 2100
+              },
+              {
+                "id": "data-extractor",
+                "nome": "DataExtractor",
+                "descricao": "Extrai dados dos documentos e preenche automaticamente formulários de credenciamento, eliminando trabalho manual.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.983,
+                "latencia_p50_ms": 1450,
+                "latencia_p95_ms": 2350
+              }
+            ]
+          },
+          {
+            "id": "geracao-minuta-contrato",
+            "nome": "Geração de Minuta de Contrato",
+            "descricao": "Geração automatizada de minutas de contratos personalizadas com base nos dados validados do prestador.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1980,
+            "agentes": [
+              {
+                "id": "minuta-generator",
+                "nome": "MinutaGenerator",
+                "descricao": "Gera minutas de contratos com cláusulas adequadas baseadas no tipo de prestador, serviços oferecidos e região.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 780,
+                "taxa_sucesso": 0.994,
+                "latencia_p50_ms": 1050,
+                "latencia_p95_ms": 1820
+              },
+              {
+                "id": "integration-engine",
+                "nome": "IntegrationEngine",
+                "descricao": "Integra dados validados na base da Blue e prepara para assinatura digital do contrato.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 780,
+                "taxa_sucesso": 0.991,
+                "latencia_p50_ms": 920,
+                "latencia_p95_ms": 1580
+              }
+            ]
+          },
+          {
+            "id": "compliance-prestador",
+            "nome": "Compliance de Prestadores",
+            "descricao": "Verifica conformidade regulatória e cruza informações com bases da ANS e outros órgãos.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2280,
+            "agentes": [
+              {
+                "id": "compliance-checker-prestador",
+                "nome": "ComplianceCheckerPrestador",
+                "descricao": "Verifica situação do prestador junto à ANS, vigilância sanitária e outros órgãos reguladores.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.989,
+                "latencia_p50_ms": 1180,
+                "latencia_p95_ms": 1980
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "compliance",
+        "nome": "Compliance",
+        "descricao": "Monitora conformidade regulatória e auditoria de processos internos.",
+        "responsavel_setor": "Ziliana Deiró",
+        "percentual_automacao_setor": 0.86,
+        "processos": [
+          {
+            "id": "monitoramento-regulatorio",
+            "nome": "Monitoramento Regulatório",
+            "descricao": "Monitora mudanças em regulamentações e normas do setor.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1890,
+            "agentes": [
+              {
+                "id": "regmonitor",
+                "nome": "RegMonitor",
+                "descricao": "Monitora updates regulatórios em tempo real.",
+                "responsavel_tecnico": "Beatriz Costa",
+                "execucoes_24h": 2100,
+                "taxa_sucesso": 0.989,
+                "latencia_p50_ms": 1020,
+                "latencia_p95_ms": 1720
+              }
+            ]
+          },
+          {
+            "id": "auditoria-processos",
+            "nome": "Auditoria de Processos",
+            "descricao": "Audita processos internos e identifica não-conformidades.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2650,
+            "agentes": [
+              {
+                "id": "auditai",
+                "nome": "AuditAI",
+                "descricao": "Realiza auditorias automáticas de processos críticos.",
+                "responsavel_tecnico": "Marcos Silva",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.976,
+                "latencia_p50_ms": 1340,
+                "latencia_p95_ms": 2400
+              }
+            ]
+          },
+          {
+            "id": "gestao-riscos",
+            "nome": "Gestão de Riscos",
+            "descricao": "Identifica e classifica riscos operacionais e regulatórios.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 2100,
+            "agentes": [
+              {
+                "id": "riskanalyzer",
+                "nome": "RiskAnalyzer",
+                "descricao": "Analisa e pontua riscos com modelos preditivos.",
+                "responsavel_tecnico": "Luciana Pires",
+                "execucoes_24h": 1150,
+                "taxa_sucesso": 0.961,
+                "latencia_p50_ms": 1100,
+                "latencia_p95_ms": 1980
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "regulacao",
+        "nome": "Regulação",
+        "descricao": "Análise e autorização de procedimentos médicos e exames.",
+        "responsavel_setor": "Franciele Ribeiro",
+        "percentual_automacao_setor": 0.83,
+        "processos": [
+          {
+            "id": "autorizacao-procedimentos",
+            "nome": "Autorização de Procedimentos",
+            "descricao": "Analisa e autoriza solicitações de procedimentos médicos.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1450,
+            "agentes": [
+              {
+                "id": "authengine",
+                "nome": "AuthEngine",
+                "descricao": "Avalia e autoriza procedimentos com base em diretrizes.",
+                "responsavel_tecnico": "Dr. Paulo Henrique",
+                "execucoes_24h": 4580,
+                "taxa_sucesso": 0.982,
+                "latencia_p50_ms": 780,
+                "latencia_p95_ms": 1320
+              }
+            ]
+          },
+          {
+            "id": "analise-clinica",
+            "nome": "Análise Clínica",
+            "descricao": "Avalia indicações clínicas e necessidade de procedimentos.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2200,
+            "agentes": [
+              {
+                "id": "clinicalai",
+                "nome": "ClinicalAI",
+                "descricao": "Analisa histórico clínico e valida indicações médicas.",
+                "responsavel_tecnico": "Dra. Renata Moura",
+                "execucoes_24h": 3240,
+                "taxa_sucesso": 0.971,
+                "latencia_p50_ms": 1150,
+                "latencia_p95_ms": 1980
+              }
+            ]
+          },
+          {
+            "id": "gestao-auditoria-medica",
+            "nome": "Gestão de Auditoria Médica",
+            "descricao": "Gerencia processos de auditoria médica e glosas.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 2890,
+            "agentes": [
+              {
+                "id": "medaudit",
+                "nome": "MedAudit",
+                "descricao": "Auxilia auditoria médica com análise de padrões.",
+                "responsavel_tecnico": "Dr. Marcelo Souza",
+                "execucoes_24h": 1680,
+                "taxa_sucesso": 0.948,
+                "latencia_p50_ms": 1420,
+                "latencia_p95_ms": 2650
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vendas-pme",
+        "nome": "Vendas PME",
+        "descricao": "Gestão de vendas corporativas para pequenas e médias empresas.",
+        "responsavel_setor": "David Lobo",
+        "percentual_automacao_setor": 0.85,
+        "processos": [
+          {
+            "id": "cotacao-automatica",
+            "nome": "Cotação Automatizada",
+            "descricao": "Gera cotações personalizadas para empresas de forma automática.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1750,
+            "agentes": [
+              {
+                "id": "quotegen",
+                "nome": "QuoteGen",
+                "descricao": "Gera cotações com pricing dinâmico para PMEs.",
+                "responsavel_tecnico": "Thiago Mendes",
+                "execucoes_24h": 980,
+                "taxa_sucesso": 0.984,
+                "latencia_p50_ms": 920,
+                "latencia_p95_ms": 1580
+              }
+            ]
+          },
+          {
+            "id": "analise-documental",
+            "nome": "Análise Documental de Beneficiários",
+            "descricao": "Validação automatizada de documentos de novos beneficiários com OCR e comparação inteligente, reduzindo fraudes e tempo de aprovação de dias para segundos.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 3200,
+            "agentes": [
+              {
+                "id": "ocr-engine",
+                "nome": "OCREngine",
+                "descricao": "Engine de OCR treinado com documentos da Blue para extração precisa de dados de RG, CPF, comprovantes e outros documentos.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 2890,
+                "taxa_sucesso": 0.982,
+                "latencia_p50_ms": 1450,
+                "latencia_p95_ms": 2400
+              },
+              {
+                "id": "doc-comparator",
+                "nome": "DocComparator",
+                "descricao": "Compara dados extraídos entre múltiplos documentos para validar consistência e detectar inconsistências ou fraudes.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 2890,
+                "taxa_sucesso": 0.989,
+                "latencia_p50_ms": 1120,
+                "latencia_p95_ms": 1850
+              },
+              {
+                "id": "fraud-detector",
+                "nome": "FraudDetector",
+                "descricao": "Detecta tentativas de fraude analisando padrões suspeitos, validando endereços e cruzando informações com bases externas.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 2890,
+                "taxa_sucesso": 0.994,
+                "latencia_p50_ms": 980,
+                "latencia_p95_ms": 1620
+              },
+              {
+                "id": "corretor-notifier",
+                "nome": "CorretorNotifier",
+                "descricao": "Notifica corretor instantaneamente sobre aprovação ou pendências, permitindo resolução rápida de problemas.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 2890,
+                "taxa_sucesso": 0.996,
+                "latencia_p50_ms": 520,
+                "latencia_p95_ms": 890
+              }
+            ]
+          },
+          {
+            "id": "analise-viabilidade",
+            "nome": "Análise de Viabilidade",
+            "descricao": "Analisa viabilidade comercial e risco de carteiras PME.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2350,
+            "agentes": [
+              {
+                "id": "feasibility",
+                "nome": "FeasibilityCheck",
+                "descricao": "Avalia viabilidade e risco de novas carteiras.",
+                "responsavel_tecnico": "Marina Cardoso",
+                "execucoes_24h": 560,
+                "taxa_sucesso": 0.969,
+                "latencia_p50_ms": 1180,
+                "latencia_p95_ms": 2100
+              }
+            ]
+          },
+          {
+            "id": "negociacao-contratos",
+            "nome": "Negociação de Contratos",
+            "descricao": "Auxilia negociação com análise de propostas e contrapropostas.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1980,
+            "agentes": [
+              {
+                "id": "negotiator",
+                "nome": "NegotiationAssist",
+                "descricao": "Sugere estratégias de negociação baseadas em histórico.",
+                "responsavel_tecnico": "Gabriel Reis",
+                "execucoes_24h": 340,
+                "taxa_sucesso": 0.936,
+                "latencia_p50_ms": 1050,
+                "latencia_p95_ms": 1850
+              }
+            ]
+          },
+          {
+            "id": "implementacao-clientes",
+            "nome": "Implementação de Clientes",
+            "descricao": "Gerencia onboarding de novos clientes PME.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3200,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "desenvolvimento",
+        "nome": "Desenvolvimento",
+        "descricao": "Desenvolvimento de software, infraestrutura e inovação tecnológica.",
+        "responsavel_setor": "Maicon Bispo",
+        "percentual_automacao_setor": 0.74,
+        "processos": [
+          {
+            "id": "code-review",
+            "nome": "Code Review Automatizado",
+            "descricao": "Analisa código e identifica problemas de qualidade e segurança.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1580,
+            "agentes": [
+              {
+                "id": "codereviewer",
+                "nome": "CodeReviewer",
+                "descricao": "Analisa código e sugere melhorias de qualidade.",
+                "responsavel_tecnico": "Leonardo Dias",
+                "execucoes_24h": 2340,
+                "taxa_sucesso": 0.977,
+                "latencia_p50_ms": 850,
+                "latencia_p95_ms": 1450
+              }
+            ]
+          },
+          {
+            "id": "testes-automatizados",
+            "nome": "Geração de Testes",
+            "descricao": "Gera testes unitários e de integração automaticamente.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2100,
+            "agentes": [
+              {
+                "id": "testgen",
+                "nome": "TestGenerator",
+                "descricao": "Gera suites de testes com alta cobertura.",
+                "responsavel_tecnico": "Vanessa Lopes",
+                "execucoes_24h": 1680,
+                "taxa_sucesso": 0.965,
+                "latencia_p50_ms": 1100,
+                "latencia_p95_ms": 1920
+              }
+            ]
+          },
+          {
+            "id": "monitoramento-performance",
+            "nome": "Monitoramento de Performance",
+            "descricao": "Monitora aplicações e detecta anomalias de performance.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1250,
+            "agentes": [
+              {
+                "id": "perfmonitor",
+                "nome": "PerfMonitor",
+                "descricao": "Detecta anomalias e bottlenecks em tempo real.",
+                "responsavel_tecnico": "André Santos",
+                "execucoes_24h": 4890,
+                "taxa_sucesso": 0.952,
+                "latencia_p50_ms": 680,
+                "latencia_p95_ms": 1150
+              }
+            ]
+          },
+          {
+            "id": "infraestrutura-iac",
+            "nome": "Infraestrutura como Código",
+            "descricao": "Gerencia infraestrutura com automação e GitOps.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 2800,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "regulatorio",
+        "nome": "Regulatório",
+        "descricao": "Gestão de conformidade com ANS e órgãos reguladores.",
+        "responsavel_setor": "Aline Barreira",
+        "percentual_automacao_setor": 0.73,
+        "processos": [
+          {
+            "id": "envio-ans",
+            "nome": "Envio de Dados ANS",
+            "descricao": "Prepara e envia dados regulatórios para ANS automaticamente.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2450,
+            "agentes": [
+              {
+                "id": "anssubmit",
+                "nome": "ANSSubmit",
+                "descricao": "Formata e submete dados para sistemas da ANS.",
+                "responsavel_tecnico": "Camila Ferreira",
+                "execucoes_24h": 340,
+                "taxa_sucesso": 0.991,
+                "latencia_p50_ms": 1280,
+                "latencia_p95_ms": 2200
+              }
+            ]
+          },
+          {
+            "id": "validacao-dados",
+            "nome": "Validação de Dados",
+            "descricao": "Valida dados antes de submissão regulatória.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1680,
+            "agentes": [
+              {
+                "id": "datavalidator",
+                "nome": "DataValidator",
+                "descricao": "Valida integridade e conformidade de dados.",
+                "responsavel_tecnico": "Eduardo Ramos",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.983,
+                "latencia_p50_ms": 920,
+                "latencia_p95_ms": 1560
+              }
+            ]
+          },
+          {
+            "id": "gestao-indicadores",
+            "nome": "Gestão de Indicadores",
+            "descricao": "Calcula e monitora indicadores regulatórios.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1950,
+            "agentes": [
+              {
+                "id": "kpicalc",
+                "nome": "KPICalculator",
+                "descricao": "Calcula indicadores e identifica desvios.",
+                "responsavel_tecnico": "Juliana Barros",
+                "execucoes_24h": 1200,
+                "taxa_sucesso": 0.958,
+                "latencia_p50_ms": 1050,
+                "latencia_p95_ms": 1820
+              }
+            ]
+          },
+          {
+            "id": "resposta-notificacoes",
+            "nome": "Resposta a Notificações",
+            "descricao": "Prepara respostas para notificações de órgãos reguladores.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3400,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "juridico",
+        "nome": "Jurídico",
+        "descricao": "Gestão de processos judiciais, contratos e consultoria jurídica.",
+        "responsavel_setor": "Roberto Boreli",
+        "percentual_automacao_setor": 0.69,
+        "processos": [
+          {
+            "id": "analise-contratos",
+            "nome": "Análise de Contratos",
+            "descricao": "Analisa contratos e identifica cláusulas de risco.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2650,
+            "agentes": [
+              {
+                "id": "contractanalyzer",
+                "nome": "ContractAnalyzer",
+                "descricao": "Analisa contratos com NLP para detectar riscos.",
+                "responsavel_tecnico": "Dra. Sofia Almeida",
+                "execucoes_24h": 580,
+                "taxa_sucesso": 0.972,
+                "latencia_p50_ms": 1350,
+                "latencia_p95_ms": 2400
+              }
+            ]
+          },
+          {
+            "id": "gestao-processos",
+            "nome": "Gestão de Processos Judiciais",
+            "descricao": "Monitora prazos e movimentações processuais.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1890,
+            "agentes": [
+              {
+                "id": "lawsuittrack",
+                "nome": "LawsuitTracker",
+                "descricao": "Monitora processos e alerta sobre prazos críticos.",
+                "responsavel_tecnico": "Dr. Alexandre Lima",
+                "execucoes_24h": 1240,
+                "taxa_sucesso": 0.946,
+                "latencia_p50_ms": 1020,
+                "latencia_p95_ms": 1750
+              }
+            ]
+          },
+          {
+            "id": "pesquisa-jurisprudencia",
+            "nome": "Pesquisa de Jurisprudência",
+            "descricao": "Busca precedentes e jurisprudência relevante.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1550,
+            "agentes": [
+              {
+                "id": "jurisearch",
+                "nome": "JuriSearch",
+                "descricao": "Busca e analisa jurisprudência relevante.",
+                "responsavel_tecnico": "Dra. Beatriz Gomes",
+                "execucoes_24h": 670,
+                "taxa_sucesso": 0.981,
+                "latencia_p50_ms": 840,
+                "latencia_p95_ms": 1420
+              }
+            ]
+          },
+          {
+            "id": "consultoria-juridica",
+            "nome": "Consultoria Jurídica",
+            "descricao": "Responde consultas jurídicas de outras áreas.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3800,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "rh",
+        "nome": "RH",
+        "descricao": "Gestão de pessoas, recrutamento e desenvolvimento de talentos.",
+        "responsavel_setor": "Vanessa Pena",
+        "percentual_automacao_setor": 0.65,
+        "processos": [
+          {
+            "id": "triagem-curriculums",
+            "nome": "Triagem de Currículos",
+            "descricao": "Analisa e classifica currículos automaticamente.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1320,
+            "agentes": [
+              {
+                "id": "resumescreener",
+                "nome": "ResumeScreener",
+                "descricao": "Analisa currículos e pontua candidatos.",
+                "responsavel_tecnico": "Carolina Pinto",
+                "execucoes_24h": 1890,
+                "taxa_sucesso": 0.976,
+                "latencia_p50_ms": 720,
+                "latencia_p95_ms": 1250
+              }
+            ]
+          },
+          {
+            "id": "agendamento-entrevistas",
+            "nome": "Agendamento de Entrevistas",
+            "descricao": "Coordena agendas e envia convites automaticamente.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 980,
+            "agentes": [
+              {
+                "id": "scheduler",
+                "nome": "InterviewScheduler",
+                "descricao": "Gerencia agendamento de entrevistas com otimização.",
+                "responsavel_tecnico": "Rodrigo Mendes",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.988,
+                "latencia_p50_ms": 540,
+                "latencia_p95_ms": 920
+              }
+            ]
+          },
+          {
+            "id": "onboarding-colaboradores",
+            "nome": "Onboarding de Colaboradores",
+            "descricao": "Guia novos colaboradores no processo de integração.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 2150,
+            "agentes": [
+              {
+                "id": "hrbot",
+                "nome": "HRBot",
+                "descricao": "Chatbot que auxilia onboarding de novos colaboradores.",
+                "responsavel_tecnico": "Tatiana Cruz",
+                "execucoes_24h": 340,
+                "taxa_sucesso": 0.941,
+                "latencia_p50_ms": 1150,
+                "latencia_p95_ms": 2020
+              }
+            ]
+          },
+          {
+            "id": "avaliacao-desempenho",
+            "nome": "Avaliação de Desempenho",
+            "descricao": "Gerencia ciclos de avaliação de performance.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3200,
+            "agentes": []
+          },
+          {
+            "id": "gestao-folha",
+            "nome": "Gestão de Folha de Pagamento",
+            "descricao": "Processa e valida dados de folha de pagamento.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 2800,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "contas-medicas",
+        "nome": "Contas Médicas",
+        "descricao": "Processamento e auditoria de contas médicas e hospitalares.",
+        "responsavel_setor": "Luiz Santos",
+        "percentual_automacao_setor": 0.46,
+        "processos": [
+          {
+            "id": "digitalizacao-contas",
+            "nome": "Digitalização de Contas",
+            "descricao": "Digitaliza e extrai dados de contas médicas físicas.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 1850,
+            "agentes": [
+              {
+                "id": "ocrengine",
+                "nome": "OCREngine",
+                "descricao": "Extrai dados de contas médicas com OCR avançado.",
+                "responsavel_tecnico": "Daniel Souza",
+                "execucoes_24h": 3240,
+                "taxa_sucesso": 0.968,
+                "latencia_p50_ms": 980,
+                "latencia_p95_ms": 1680
+              }
+            ]
+          },
+          {
+            "id": "validacao-procedimentos",
+            "nome": "Validação de Procedimentos",
+            "descricao": "Valida códigos e valores de procedimentos faturados.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 2350,
+            "agentes": [
+              {
+                "id": "procvalidator",
+                "nome": "ProcValidator",
+                "descricao": "Valida procedimentos contra tabelas e diretrizes.",
+                "responsavel_tecnico": "Larissa Ferreira",
+                "execucoes_24h": 2890,
+                "taxa_sucesso": 0.938,
+                "latencia_p50_ms": 1220,
+                "latencia_p95_ms": 2180
+              }
+            ]
+          },
+          {
+            "id": "auditoria-contas",
+            "nome": "Auditoria de Contas",
+            "descricao": "Realiza auditoria detalhada de contas de alto valor.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 4200,
+            "agentes": []
+          },
+          {
+            "id": "glosa-tecnica",
+            "nome": "Glosa Técnica",
+            "descricao": "Analisa e aplica glosas técnicas em contas.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3800,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "financeiro",
+        "nome": "Financeiro",
+        "descricao": "Gestão financeira, contabilidade e faturamento.",
+        "responsavel_setor": "Luiz Felipe",
+        "percentual_automacao_setor": 0.41,
+        "processos": [
+          {
+            "id": "conciliacao-bancaria",
+            "nome": "Conciliação Bancária",
+            "descricao": "Concilia movimentações bancárias com lançamentos contábeis.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2150,
+            "agentes": [
+              {
+                "id": "reconciler",
+                "nome": "BankReconciler",
+                "descricao": "Concilia extratos bancários automaticamente.",
+                "responsavel_tecnico": "Fábio Henrique",
+                "execucoes_24h": 890,
+                "taxa_sucesso": 0.982,
+                "latencia_p50_ms": 1150,
+                "latencia_p95_ms": 1980
+              }
+            ]
+          },
+          {
+            "id": "faturamento-automatico",
+            "nome": "Faturamento Automático",
+            "descricao": "Gera faturas mensais automaticamente para clientes.",
+            "status": "Parcial",
+            "tempo_medio_execucao_ms": 1780,
+            "agentes": [
+              {
+                "id": "billgen",
+                "nome": "BillingEngine",
+                "descricao": "Gera faturas com base em contratos e utilização.",
+                "responsavel_tecnico": "Sandra Oliveira",
+                "execucoes_24h": 2340,
+                "taxa_sucesso": 0.951,
+                "latencia_p50_ms": 950,
+                "latencia_p95_ms": 1650
+              }
+            ]
+          },
+          {
+            "id": "cobranca-inadimplentes",
+            "nome": "Cobrança de Inadimplentes",
+            "descricao": "Gerencia processo de cobrança de clientes inadimplentes.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3200,
+            "agentes": []
+          },
+          {
+            "id": "relatorios-gerenciais",
+            "nome": "Relatórios Gerenciais",
+            "descricao": "Gera relatórios financeiros e dashboards gerenciais.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 2900,
+            "agentes": []
+          },
+          {
+            "id": "planejamento-orcamento",
+            "nome": "Planejamento e Orçamento",
+            "descricao": "Elabora projeções financeiras e orçamento anual.",
+            "status": "Manual",
+            "tempo_medio_execucao_ms": 3600,
+            "agentes": []
+          }
+        ]
+      },
+      {
+        "id": "vendas-pj-plus",
+        "nome": "Vendas PJ+",
+        "descricao": "Sistema inteligente de análise de editais de licitação com Licite.AI, que busca, classifica e explica editais de forma automatizada.",
+        "responsavel_setor": "Paulo Sérgio",
+        "percentual_automacao_setor": 0.88,
+        "processos": [
+          {
+            "id": "busca-classificacao-editais",
+            "nome": "Busca e Classificação de Editais",
+            "descricao": "Licite.AI varre sites de licitação continuamente e classifica editais por relevância baseada nas especificações do cliente (produto, região, porte).",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 2850,
+            "agentes": [
+              {
+                "id": "licite-ai",
+                "nome": "Licite.AI",
+                "descricao": "Agente inteligente que busca editais em múltiplas fontes (Comprasnet, portais estaduais/municipais), classifica por relevância e explica de forma detalhada cada oportunidade.",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 6290,
+                "taxa_sucesso": 0.979,
+                "latencia_p50_ms": 1265,
+                "latencia_p95_ms": 2175
+              }
+            ]
+          },
+          {
+            "id": "analise-explicacao-editais",
+            "nome": "Análise e Explicação de Editais",
+            "descricao": "Licite.AI analisa editais em profundidade, resume pontos críticos, avalia viabilidade e recomenda participação com justificativa detalhada.",
+            "status": "Automatizado",
+            "tempo_medio_execucao_ms": 3650,
+            "agentes": [
+              {
+                "id": "licite-ai-analyzer",
+                "nome": "Licite.AI Analyzer",
+                "descricao": "Módulo de análise profunda que resume editais extensos, avalia viabilidade para o cliente e recomenda participação com análise multi-critério (produto, competitividade, custos regionais).",
+                "responsavel_tecnico": "Equipe NUV Tech",
+                "execucoes_24h": 5040,
+                "taxa_sucesso": 0.984,
+                "latencia_p50_ms": 1760,
+                "latencia_p95_ms": 2940
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
