@@ -75,7 +75,7 @@ export function calculateGlobalExecutionTime(empresa: Empresa): number {
 }
 
 /**
- * Count total unique agents in the company
+ * Count total unique agents in the company (main agents only)
  */
 export function countTotalAgents(empresa: Empresa): number {
   const allAgents = empresa.setores.flatMap((setor) =>
@@ -83,6 +83,16 @@ export function countTotalAgents(empresa: Empresa): number {
   );
 
   return allAgents.length;
+}
+
+/**
+ * Count total agents including nano-agents
+ * Each main agent has ~50 specialized nano-agents working behind the scenes
+ */
+export function countTotalAgentsWithNano(empresa: Empresa): number {
+  const mainAgents = countTotalAgents(empresa);
+  const nanoAgentsPerMain = 50; // Average nano-agents per main agent
+  return mainAgents * nanoAgentsPerMain;
 }
 
 /**

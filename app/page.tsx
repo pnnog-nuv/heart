@@ -8,6 +8,7 @@ import {
   calculateGlobalAutomation,
   calculateGlobalExecutionTime,
   countTotalAgents,
+  countTotalAgentsWithNano,
   calculateSetorMetrics,
   formatPercent,
   formatMs,
@@ -24,7 +25,8 @@ export default function HomePage() {
 
   // Calculate global metrics
   const globalAutomation = calculateGlobalAutomation(empresa);
-  const totalAgents = countTotalAgents(empresa);
+  const totalAgents = countTotalAgentsWithNano(empresa); // Includes nano-agents (~2,500 total)
+  const mainAgents = countTotalAgents(empresa); // Main agents only (~50)
   const avgExecutionTime = calculateGlobalExecutionTime(empresa);
   const totalSetores = empresa.setores.length;
   const totalProcessos = empresa.setores.reduce(
@@ -71,8 +73,8 @@ export default function HomePage() {
           />
           <KpiCard
             title="Total de Agentes"
-            value={totalAgents}
-            subtitle={`${totalProcessos} processos`}
+            value={totalAgents.toLocaleString('pt-BR')}
+            subtitle={`${mainAgents} agentes principais + nano-agentes`}
             icon={Cpu}
             delay={0.1}
           />
