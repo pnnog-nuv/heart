@@ -69,7 +69,7 @@ export function SectorCard({ setor, metrics, delay = 0, className }: SectorCardP
                 {formatPercent(setor.percentual_automacao_setor)}
               </span>
             </div>
-            <Progress value={setor.percentual_automacao_setor} className="h-2" />
+            <Progress value={setor.percentual_automacao_setor * 100} className="h-2" />
           </div>
 
           {/* Micro KPIs */}

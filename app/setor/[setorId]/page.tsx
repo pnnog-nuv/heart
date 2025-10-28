@@ -87,7 +87,7 @@ export default function SetorPage({ params }: PageProps) {
               </p>
             </div>
             <Progress
-              value={setor.percentual_automacao_setor}
+              value={setor.percentual_automacao_setor * 100}
               className="h-3"
             />
           </div>
