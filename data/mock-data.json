@@ -3,7 +3,7 @@
     "id": "blue",
     "nome": "Blue Saúde",
     "descricao": "Operadora de saúde com agentes de IA em múltiplos setores, automatizando processos críticos e aumentando eficiência operacional.",
-    "percentual_automacao_global": 0.772,
+    "percentual_automacao_global": 0.737,
     "setores": [
       {
         "id": "atendimento",
